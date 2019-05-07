@@ -1,0 +1,610 @@
+{
+    "title": "OpenTrials",
+    "docsUrl": "",
+    "url": "https://api.apis.guru/v2/specs/opentrials.local/0.0.1/swagger.json",
+    "envVars": {},
+    "credentials": {
+        "fields": {
+            "server": {
+                "label": "Server",
+                "viewClass": "SelectView",
+                "model": [
+                    "https://opentrials.local/v1",
+                    "--- Custom URL"
+                ],
+                "required": true
+            },
+            "otherServer": {
+                "label": "Custom Server URL",
+                "viewClass": "TextFieldView"
+            }
+        }
+    },
+    "triggers": {
+        "startFlow": {
+            "main": "./lib/triggers/startFlow.js",
+            "type": "polling",
+            "title": "Start Flow",
+            "fields": {}
+        }
+    },
+    "actions": {
+        "getCondition": {
+            "main": "./lib/actions/getCondition.js",
+            "title": "Returns condition details",
+            "description": "Returns condition details",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getCondition.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "x_swagger_router_controller_conditions__id_": {
+            "main": "./lib/actions/x_swagger_router_controller_conditions__id_.js",
+            "title": "x_swagger_router_controller_conditions__id_",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/x_swagger_router_controller_conditions__id_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "listDocumentCategories": {
+            "main": "./lib/actions/listDocumentCategories.js",
+            "title": "Returns document categories",
+            "description": "Returns document categories",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/listDocumentCategories.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "x_swagger_router_controller_document_categories": {
+            "main": "./lib/actions/x_swagger_router_controller_document_categories.js",
+            "title": "x_swagger_router_controller_document_categories",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/x_swagger_router_controller_document_categories.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "listDocuments": {
+            "main": "./lib/actions/listDocuments.js",
+            "title": "Returns documents",
+            "description": "Returns documents",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/listDocuments.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "x_swagger_router_controller_documents": {
+            "main": "./lib/actions/x_swagger_router_controller_documents.js",
+            "title": "x_swagger_router_controller_documents",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/x_swagger_router_controller_documents.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getDocument": {
+            "main": "./lib/actions/getDocument.js",
+            "title": "Returns details of a document",
+            "description": "Returns details of a document",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getDocument.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "x_swagger_router_controller_documents__id_": {
+            "main": "./lib/actions/x_swagger_router_controller_documents__id_.js",
+            "title": "x_swagger_router_controller_documents__id_",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/x_swagger_router_controller_documents__id_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "listFDAApplications": {
+            "main": "./lib/actions/listFDAApplications.js",
+            "title": "Returns FDA applications",
+            "description": "Returns FDA applications",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/listFDAApplications.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "x_swagger_router_controller_fda_applications": {
+            "main": "./lib/actions/x_swagger_router_controller_fda_applications.js",
+            "title": "x_swagger_router_controller_fda_applications",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/x_swagger_router_controller_fda_applications.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getFDAApplication": {
+            "main": "./lib/actions/getFDAApplication.js",
+            "title": "Returns an FDA application details",
+            "description": "Returns an FDA application details",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getFDAApplication.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "x_swagger_router_controller_fda_applications__id_": {
+            "main": "./lib/actions/x_swagger_router_controller_fda_applications__id_.js",
+            "title": "x_swagger_router_controller_fda_applications__id_",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/x_swagger_router_controller_fda_applications__id_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getIntervention": {
+            "main": "./lib/actions/getIntervention.js",
+            "title": "Returns intervention details",
+            "description": "Returns intervention details",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getIntervention.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "x_swagger_router_controller_interventions__id_": {
+            "main": "./lib/actions/x_swagger_router_controller_interventions__id_.js",
+            "title": "x_swagger_router_controller_interventions__id_",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/x_swagger_router_controller_interventions__id_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getOrganisation": {
+            "main": "./lib/actions/getOrganisation.js",
+            "title": "Returns organisation details",
+            "description": "Returns organisation details",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getOrganisation.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "x_swagger_router_controller_organisations__id_": {
+            "main": "./lib/actions/x_swagger_router_controller_organisations__id_.js",
+            "title": "x_swagger_router_controller_organisations__id_",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/x_swagger_router_controller_organisations__id_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getPerson": {
+            "main": "./lib/actions/getPerson.js",
+            "title": "Returns person details",
+            "description": "Returns person details",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getPerson.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "x_swagger_router_controller_persons__id_": {
+            "main": "./lib/actions/x_swagger_router_controller_persons__id_.js",
+            "title": "x_swagger_router_controller_persons__id_",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/x_swagger_router_controller_persons__id_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getPublication": {
+            "main": "./lib/actions/getPublication.js",
+            "title": "Returns publication details",
+            "description": "Returns publication details",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getPublication.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "x_swagger_router_controller_publications__id_": {
+            "main": "./lib/actions/x_swagger_router_controller_publications__id_.js",
+            "title": "x_swagger_router_controller_publications__id_",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/x_swagger_router_controller_publications__id_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "searchTrials": {
+            "main": "./lib/actions/searchTrials.js",
+            "title": "Returns trials based on a search query. By default, it'll search in all of a trial's attributes.\n- `q` is a [ElasticSearch query string](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/query-dsl-query-string-query.html#query-string-syntax) (e.g. `public_title:(depressive OR depression)`)\n- `page` can take a value between `1` and `100`\n- `per_page` can take a value between `10` and `100`",
+            "description": "Returns trials based on a search query. By default, it'll search in all of a trial's attributes.\n- `q` is a [ElasticSearch query string](https://www.elastic.co/guide/en/elasticsearch/reference/2.3/query-dsl-query-string-query.html#query-string-syntax) (e.g. `public_title:(depressive OR depression)`)\n- `page` can take a value between `1` and `100`\n- `per_page` can take a value between `10` and `100`",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/searchTrials.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "x_swagger_router_controller_search": {
+            "main": "./lib/actions/x_swagger_router_controller_search.js",
+            "title": "x_swagger_router_controller_search",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/x_swagger_router_controller_search.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "autocomplete": {
+            "main": "./lib/actions/autocomplete.js",
+            "title": "Autocomplete search feature for supported database entities (`location`). It has the same options as a regular `search` operation, with an extra **required** `in` parameter indicating the entity type to search.",
+            "description": "Autocomplete search feature for supported database entities (`location`). It has the same options as a regular `search` operation, with an extra **required** `in` parameter indicating the entity type to search.",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/autocomplete.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "x_swagger_router_controller_search_autocomplete__in_": {
+            "main": "./lib/actions/x_swagger_router_controller_search_autocomplete__in_.js",
+            "title": "x_swagger_router_controller_search_autocomplete__in_",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/x_swagger_router_controller_search_autocomplete__in_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "searchFDADocuments": {
+            "main": "./lib/actions/searchFDADocuments.js",
+            "title": "Search the FDA documents",
+            "description": "Search the FDA documents",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/searchFDADocuments.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "x_swagger_router_controller_search_fda_documents": {
+            "main": "./lib/actions/x_swagger_router_controller_search_fda_documents.js",
+            "title": "x_swagger_router_controller_search_fda_documents",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/x_swagger_router_controller_search_fda_documents.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "list": {
+            "main": "./lib/actions/list.js",
+            "title": "Returns list of sources",
+            "description": "Returns list of sources",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/list.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "x_swagger_router_controller_sources": {
+            "main": "./lib/actions/x_swagger_router_controller_sources.js",
+            "title": "x_swagger_router_controller_sources",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/x_swagger_router_controller_sources.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "x_swagger_pipe_swagger_yaml": {
+            "main": "./lib/actions/x_swagger_pipe_swagger_yaml.js",
+            "title": "x_swagger_pipe_swagger_yaml",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/x_swagger_pipe_swagger_yaml.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getTrial": {
+            "main": "./lib/actions/getTrial.js",
+            "title": "Returns a trial's details and related entities (e.g. `conditions`).",
+            "description": "Returns a trial's details and related entities (e.g. `conditions`).",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getTrial.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "x_swagger_router_controller_trials__id_": {
+            "main": "./lib/actions/x_swagger_router_controller_trials__id_.js",
+            "title": "x_swagger_router_controller_trials__id_",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/x_swagger_router_controller_trials__id_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getRecords": {
+            "main": "./lib/actions/getRecords.js",
+            "title": "Returns a trial's raw records from its sources",
+            "description": "Returns a trial's raw records from its sources",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getRecords.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "x_swagger_router_controller_trials__id__records": {
+            "main": "./lib/actions/x_swagger_router_controller_trials__id__records.js",
+            "title": "x_swagger_router_controller_trials__id__records",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/x_swagger_router_controller_trials__id__records.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "getRecord": {
+            "main": "./lib/actions/getRecord.js",
+            "title": "Returns a trial's raw record from its sources",
+            "description": "Returns a trial's raw record from its sources",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/getRecord.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        },
+        "x_swagger_router_controller_trials__trialId__records__id_": {
+            "main": "./lib/actions/x_swagger_router_controller_trials__trialId__records__id_.js",
+            "title": "x_swagger_router_controller_trials__trialId__records__id_",
+            "fields": {
+                "verbose": {
+                    "viewClass": "CheckBoxView",
+                    "label": "Debug this step (log more data)"
+                }
+            },
+            "metadata": {
+                "in": "./lib/schemas/x_swagger_router_controller_trials__trialId__records__id_.in.json",
+                "out": {
+                    "type": "object"
+                }
+            }
+        }
+    }
+}
